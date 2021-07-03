@@ -61,7 +61,7 @@ describe('Test Server Routes', () => {
   it('updating a record', async () => {
     const Obj = {
       name: 'Burger',
-      price: 'Burger King'
+      description: 'Burger King'
     }
 
     const response = await request.put("/api/v1/food/" + id).send(Obj);
